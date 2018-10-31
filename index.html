@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+    <!--- basic page needs ================================================== -->
+    <meta charset="utf-8">
+    <title>Shoe Angel</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- mobile specific metas ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/modal.js"></script>
+  <style>
+    .remodal-bg.with-cf-theme.remodal-is-opening,
+    .remodal-bg.with-cf-theme.remodal-is-opened {
+      filter: none;
+    }
+    .remodal-overlay.with-cf-theme {
+      background-color: #bed600;
+    }
+    .remodal.with-cf-theme {
+      background: #fff;
+    }
+  </style>
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <style>
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #0050b2;
+    border-radius: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #f8961a;
+}
+</style>
+</head>
+<body id="top">
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+        <div class="header-logo">
+            <a class="site-logo" href="index.html">
+                <img src="images/logo1.png" alt="Homepage">
+            </a>
+        </div>
+        <nav class="header-nav">
+            <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
+            <div class="header-nav__content">
+                <h3 style="color: #f8961a !important;">Navigation</h3>
+                <ul class="header-nav__list">
+                    <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
+                    <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
+                    <li><a class="smoothscroll"  href="#brands" title="brands">Brands</a></li>
+                    <li><a class="smoothscroll"  href="#donations" title="donations">Donations</a></li>
+                    <li><a class="smoothscroll"  href="#goodwords" title="donations">Good Words</a></li>
+                    <li><a class="smoothscroll"  href="#promotionalEmails" rel="modal:open" title="brands">Promotional Emails</a></li>
+                    <li><a class="smoothscroll"  href="#faq" title="contact">FAQ</a></li>
+                    <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>
+                    <li><a class="smoothscroll"  href="https://www.customfit.me/eServices/cfshoeangelcmdlogin.aspx" title="login">Login</a></li>
+                </ul>
+                <p style="color: #f8961a !important;">Don't forget to check us out on social media!</p>
+                <ul class="header-nav__social">
+                    <li>
+                        <a href="https://www.facebook.com/shoeangelshop/"><i style="color: #f8961a;" class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a style="color: #f8961a !important;" href="https://twitter.com/shoeangelshop"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a  style="color: #f8961a !important;" href="https://www.linkedin.com/company/shoe-angel/"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div> <!-- end header-nav__content -->
+        </nav>  <!-- end header-nav -->
+        <a class="header-menu-toggle" href="#0">
+            <span class="header-menu-text" style="color:#f8961a !important;">Menu</span>
+            <span class="header-menu-icon"></span>
+        </a>
+    </header> <!-- end s-header -->
+    <!-- home ================================================== -->
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/sa_LandingImage.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+        <div class="overlay"></div>
+        <div class="shadow-overlay"></div>
+        <div class="home-content">
+            <div class="row home-content__main" style="padding-bottom:0 !important;">
+                <h3 style="color:#f8961a !important;">Welcome to Shoe Angel</h3>
+                <h2 style="color:#ffffff !important;margin-top:0px !important;margin-bottom:10px !important;">
+                    Footwear Programs Benefiting<br>
+                    Medical Professionals &<br>
+                    The Communities They Serve
+                </h2>
+                <div class="home-content__buttons" style="padding-top:0px !important;">
+                    <a href="#contact" class="smoothscroll btn btn--stroke">Contact Us</a>
+                </div>
+            </div>
+            <div class="home-content__scroll">
+                <a href="#about" class="scroll-link smoothscroll">
+                    <span>About Us</span>
+                </a>
+            </div>
+            <div class="home-content__line"></div>
+        </div> <!-- end home-content -->
+        <div id="promotionalEmails" class="modal">
+            <p>Promotional Email Sign Up</p>
+                 <!--[if lte IE 8]>
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+<![endif]-->
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+<script>
+  hbspt.forms.create({
+	portalId: "4392020",
+	formId: "9366c409-f862-4c99-8358-90f4252e07be"
+});
+</script>
+  <a href="#" rel="modal:close">Close</a>
+</div>
+        <ul class="home-social">
+            <li>
+                <a href="#promotionalEmails" rel="modal:open"><i class="fa fa-envelope" aria-hidden="true"></i><span style="color:#f8961a !important;">Promotions</span></a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/shoeangelshop/"><i class="fa fa-facebook" aria-hidden="true"></i><span style="color:#f8961a !important;">Facebook</span></a>
+            </li>
+            <li>
+                <a href="https://twitter.com/shoeangelshop"><i class="fa fa-twitter" aria-hidden="true"></i><span style="color:#f8961a !important;">Twitter</span></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/company/shoe-angel/"><i class="fa fa-linkedin" aria-hidden="true"></i><span style="color:#f8961a !important;">LinkedIn</span></a>
+            </li>
+        </ul>
+        <!-- end home-social -->
+    </section> <!-- end s-home -->
+    <!-- services ================================================== -->
+    <section id='about' class="s-services">
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead" style="color:#0050b2 !important;">About Us</h3>
+                <h1 class="display-2">What is Shoe Angel?</h1>
+            </div>
+        </div> <!-- end section-header -->
+        <div class="row services-list block-1-2 block-tab-full">
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-megaphone" style="color:#0050b2 !important;"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Who We Are</h3>
+                    <p>Shoe Angel is a superior way for the healthcare industry to supply and buy work footwear.
+                      Facility utilization of this <b style="color:#0050b2;">free footwear benefit program</b> is <b style="color:#0050b2;">good</b> for your employees and your chosen charity. It helps you establish the value of proper footwear on the job and of each employee's safety, well-being, and value of giving back. We are a provider aligned with your desire and intent to keep your employees healthy and happy.<br />
+                    </p>
+                </div>
+            </div>
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-earth" style="color:#0050b2 !important;"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Brands</h3>
+                    <p>Shoe Angel provides brands from all over that you know and love. Our selection ranges from Skechers to Nurse Mates, Alegria, Sanita and more. We've got hundreds of styles to choose from so your employees are sure to find the perfect fit to keep them safe in all-day comfort. The right shoes <b style="color:#0050b2;">feel good</b>.
+                    </p>
+                </div>
+            </div>
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-truck" style="color:#0050b2 !important;"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Shipping</h3>
+                    <p>Shipping and Returns are always free. No promotional time periods or gimmicks. No worries on shoes not fitting right, simply send them back free. We <b style="color:#0050b2;">feel good</b> about that.
+                    </p>
+                </div>
+            </div>
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-dollar" style="color:#0050b2;"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Prices</h3>
+                    <p>Our efficient online platform saves you and your employees up to 25% off traditional retail prices. Saving money is a definite <b style="color:#0050b2;">feel good</b>.
+                    </p>
+                </div>
+            </div>
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-cube" style="color:#0050b2;"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Convenience</h3>
+                    <p>24/7/365 availability. Through a customized dedicated website built just for you, your employees can shop anytime, anywhere, at their convenience. Personalization and saving time is a definite <b style="color: #0050b2;">feel good</b>.
+                    </p>
+                </div>
+            </div>
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                  <i class="icon-thumbs-up" style="color:#0050b2;"></i></div>
+                <div class="service-text">
+                    <h3 class="h2">Warranty</h3>
+                    <p>All Products are warranted for 1 full year against manufacturer defects. We <b style="color: #0050b2;">feel good</b> about that too.
+                    </p>
+                </div>
+            </div>
+        </div> <!-- end services-list -->
+    </section> <!-- end s-services -->
+    <!-- brands ================================================== -->
+    <section id="brands" class="s-clients">
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead" style="color:#0050b2 !important;">Our Clients</h3>
+                <h1 class="display-2">Shoe Angel has been honored to
+                partner up with these companies</h1>
+            </div>
+        </div> <!-- end section-header -->
+        <div class="row clients-outer" data-aos="fade-up">
+            <div class="col-full">
+                <div class="clients">
+                    <a href="#0" title="" class="clients__slide"><img src="images/img-fix/magruder.png" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="images/img-fix/highlanddistrict.png" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="images/img-fix/kingsdaughters.png" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="images/img-fix/logan_healthcare.png" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="images/img-fix/Beaumont.png" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="images/img-fix/DMC.png" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="images/img-fix/TBH.png" /></a>
+                </div> <!-- end clients -->
+            </div> <!-- end col-full -->
+        </div> <!-- end clients-outer -->
+        <div id="goodwords" class="row clients-testimonials" data-aos="fade-up">
+            <div class="col-full">
+              <h3 class="subhead" style="color:#0050b2 !important;">Testimonials</h3>
+                <div class="testimonials">
+                    <div class="testimonials__slide">
+                        <p><center><img src="images/img/beckett-springs.png" alt="Beckett Springs Logo"></center><br />"The Shoe Angel team is very professional and did a great job throughout the process of setting up our Shoe Angel site."
+                        <span class="testimonials__name">Renee Cash</span>
+                        <span class="testimonials__pos">Director of Human Resources</span>
+                        </p>
+                    </div>
+                    <div class="testimonials__slide">
+                        <p><center><img src="images/img-fix/logan_healthcare.png" alt="Logan Healthcare Logo"></center><br />"Thank you for approaching us about this unique and exciting program, Shoe Angel. I have been able to provide a way for employees to economically afford good quality shoes.
+              The discounts are great and the selection is too. The other great benefit is that it allowed us to pick our resident Christmas gift fund as our charity designation. It is so
+              great that you donate a part of the proceeds of each pair of shoes purchased back to a charity. This program has been well received by the employees and benefits the residents too.
+              Thank you for offering this program to us."
+                        <span class="testimonials__name">John Evans</span>
+                        <span class="testimonials__pos">Executive Director</span>
+                        </p>
+                    </div>
+                </div><!-- end testimonials -->
+            </div> <!-- end col-full -->
+        </div> <!-- end client-testimonials -->
+    </section> <!-- end s-clients -->
+    <!-- donations ================================================== -->
+    <section id='donations' class="s-about" style="background-color:#f8961a !important;">
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead subhead--dark">Charitable Donations</h3>
+                <h3 class="display-1 display-1--light">Do Good.<br />Feel Good.</h3>
+            </div>
+        </div>
+        <div class="row about-desc" data-aos="fade-up">
+            <div class="col-full">
+                <p>
+                    5% of every Shoe Angel purchase is given to up to 4 charities of your designation. Charities can include: your hospital foundation, a local charity, and our preset national charity, Ronald McDonald House Charities. Charity options can be customized per location, department, floor and even per associate.
+                </p>
+            </div>
+        </div>
+        <div class="row about-stats stats block-1-3 block-m-1-2 block-mob-full" data-aos="fade-up">
+            <div class="col-block stats__col ">
+              <h4 class="display-1 display-1--light">$861.72</h3>
+                <h5 style="margin-bottom:0;">Raised</h5>
+                <h6 style="margin:0;">Toward Local<br />Charities& Foundations</h6>
+            </div>
+            <div class="col-block stats__col">
+                <h4 class="display-1 display-1--light">$29.19</h3>
+                <h5 style="margin-bottom:0;">Raised</h5>
+                <h6 style="margin:0;">Toward Ronald<br />McDonald House Charities</h6>
+            </div>
+                <div class="col-block stats__col">
+                    <h4 class="display-1 display-1--light">$890.91</h3>
+                    <h5 style="margin-bottom:0;">Raised</h5>
+                    <h6 style="margin:0;">Total Contributions<br />Made To Charities</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END CHARITY SECTION-->
+    <!-- BEGIN FAQs-->
+    <section id='faq' class="s-services">
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-2">FAQs</h1>
+            </div>
+        </div> <!-- end section-header -->
+        <div class="row services-list block-1-2 block-tab-full">
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-megaphone" style="color:#0050b2 !important;"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Can I donate to any charity or foundation?</h3>
+                    <p>Yes. Your employees can choose to donate to Ronald McDonald House Charities or choose 3 additional charities which could include your hospital or local community foundation.<br />
+                    </p>
+                </div>
+            </div>
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-earth" style="color:#0050b2 !important;"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">How do I nominate my foundation to be eligible?</h3>
+                    <p>Simple – just let us know when you sign up for an account which foundation or 2 charities you choose. We’ll take care of the rest.
+                    </p>
+                </div>
+            </div>
+            <center>
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-truck" style="color:#0050b2 !important;"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">How much of each purchase is donated?</h3>
+                    <p>Shoe Angel will donate 5% of every purchase to your employee’s chosen charity. The donation will be made to each charity by Shoe Angel on behalf of each individual employee.
+                    </p>
+                </div>
+            </div>
+            </center>
+        </div> <!-- end services-list -->
+    </section> <!-- end s-services -->
+    <!-- END FAQs -->
+    <!-- contact ==================================================-->
+    <section id="contact" class="s-contact">
+        <div class="overlay"></div>
+        <div class="contact__line"></div>
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead" style="color:#f8961a !important;">Contact Us</h3>
+            </div>
+        </div>
+        <div class="row contact-content" data-aos="fade-up">
+            <div class="contact-primary">
+                <h3 class="h6">Send Us A Message</h3>
+                <form id="contactForm">
+                <!--[if lte IE 8]>
+                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+                <![endif]-->
+                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                <script>
+                  hbspt.forms.create({
+                  portalId: "4392020",
+                  formId: "8af185d6-14de-41ad-83d4-f0c28ec8d48e",
+                  css: "",
+                  submitButtonClass: "btn"
+                });
+                </script>
+</form>
+            </div>
+            <div class="contact-secondary">
+                <div class="contact-info">
+                    <h3 class="h6 hide-on-fullwidth">Contact Info</h3>
+                    <div class="cinfo">
+                        <h5 style="color:#f8961a !important;">Where to Find Us</h5>
+                        <p style="font-size:12px !important;color:#ffffff !important;">
+                            39 E Canal St<br>
+                            Nelsonville, Ohio<br>
+                            45764 USA
+                        </p>
+                    </div>
+                    <div class="cinfo">
+                        <h5 style="color:#f8961a !important;">Email Us At</h5>
+                        <p style="font-size:12px !important;color:#ffffff !important;">
+                            ashley.campbell@lehighoutfitters.com
+                        </p>
+                    </div>
+                    <div class="cinfo">
+                        <h5 style="color:#f8961a !important;">Call Us At</h5>
+                        <p style="font-size:12px !important;color:#ffffff !important;">
+                            Phone: 740.753.9100 Ext. 2112
+                        </p>
+                    </div>
+                    <ul class="contact-social">
+                      <h5 style="color:#f8961a !important;">Social</h5>
+                        <li>
+                            <a href="https://www.facebook.com/shoeangelshop/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/shoeangelshop"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/company/shoe-angel/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                    </ul> <!-- end contact-social -->
+                </div> <!-- end contact-info -->
+            </div> <!-- end contact-secondary -->
+        </div> <!-- end contact-content -->
+    </section> <!-- end s-contact -->
+    <!-- footer ================================================== -->
+    <footer>
+            <div class="col-twelve">
+                <div class="copyright">
+                    <span>&copy; 2018 Lehigh Outfitters. Shoe Angel is a branded service of Lehigh Outfitters, LLC, a Rocky Brands company. All rights reserved.</span>
+                </div>
+                <div class="go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>
+                </div>
+            </div>
+    </footer> <!-- end footer -->
+    <!-- photoswipe background ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- end photoSwipe background -->
+    <!-- preloader ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+            <div class="line-scale-pulse-out">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <!-- Java Script ================================================== -->
+    <!-- jQuery Modal -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
