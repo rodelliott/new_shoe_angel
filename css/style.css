@@ -391,7 +391,8 @@ a {
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 .home_banner_area {
-  background: url(../img/banner/sa-header.jpg) no-repeat center bottom;
+  background: url(../img/banner/sa-bg.gif) no-repeat center bottom;
+  background-size: cover;
   position: relative;
   z-index: 1;
   height: 900px; }
@@ -439,7 +440,7 @@ a {
           border: 1px solid #0057bb; }
 
 .banner-area {
-  background: url(../img/banner/sa-header.jpg) center;
+  background: url(../img/banner/sa-bg.gif) center;
   background-size: cover; }
   .banner-area .primary-btn {
     padding-left: 30px;
