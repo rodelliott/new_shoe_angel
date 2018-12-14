@@ -1,6 +1,11 @@
 .hs-form-required{
 		color:#0057bb !important;
 	}
+
+	.hs-form .label{
+		color:#f2a900 !important;
+	}
+
 	.hs-input{
 		border-bottom:1px solid #dadada !important;
 		border-top:none !important;
