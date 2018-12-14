@@ -2927,6 +2927,30 @@ h6 {
     color: #ffffff;
     border: 1px solid #ffffff; }
 
+    .blue_btn {
+      position: relative;
+      display: inline-block;
+      background: #0057bb;
+      padding: 0px 40px;
+      color: #fff;
+      font-family: "Roboto", sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 48px;
+      border: 1px solid #0057bb;
+      outline: none !important;
+      box-shadow: none !important;
+      text-align: center;
+      cursor: pointer;
+      transition: all 300ms linear 0s;
+      border-radius: 5px;
+      text-transform: capitalize; }
+      .blue_btn:hover {
+        background: #f2a900;
+        color: #ffffff;
+        border: 1px solid #f2a900; }
+
+
 .main_btn2 {
   display: inline-block;
   background: #000000;
