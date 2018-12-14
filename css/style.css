@@ -3243,7 +3243,7 @@ h6 {
   border-radius: 20px;
   color: #fff;
   padding-left: 20px;
-  width: auto; }
+  width: auto !important; }
   .single-footer-widget input:focus {
     outline: none; }
 .single-footer-widget .bb-btn {
