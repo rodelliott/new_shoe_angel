@@ -3229,7 +3229,7 @@ h6 {
 .single-footer-widget h3 {
   color: #ffffff; }
 .single-footer-widget .form-group {
-  width: 100%; }
+  width: auto; }
   .single-footer-widget .form-group .main_btn {
     border-radius: 20px;
     line-height: 40px; }
@@ -3242,7 +3242,7 @@ h6 {
   font-weight: 300;
   border-radius: 20px;
   color: #fff;
-  padding-left: 20px;
+  padding-left: 0px !important;
   width: auto !important; }
   .single-footer-widget input:focus {
     outline: none; }
