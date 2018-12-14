@@ -2950,6 +2950,29 @@ h6 {
         color: #ffffff;
         border: 1px solid #f2a900; }
 
+        .footer_btn {
+          position: relative;
+          display: inline-block;
+          background: #2d2d2d!important;
+          padding: 2px 20px;
+          color: #fff!important;
+          font-family: "Roboto", sans-serif;
+          font-size: 13px;
+          font-weight: 500;
+          line-height: 48px;
+          border: 1px solid #2d2d2d!important;
+          outline: none !important;
+          box-shadow: none !important;
+          text-transform: uppercase !important;
+          text-align: center;
+          cursor: pointer;
+          transition: all 300ms linear 0s;
+          border-radius: 20px !important; }
+          .footer_btn:hover {
+            background: #0057bb !important;
+            color: #ffffff!important;
+            border: 1px solid #0057bb!important; }
+
 
 .main_btn2 {
   display: inline-block;
@@ -3220,7 +3243,7 @@ h6 {
   border-radius: 20px;
   color: #fff;
   padding-left: 20px;
-  width: 100%; }
+  width: auto; }
   .single-footer-widget input:focus {
     outline: none; }
 .single-footer-widget .bb-btn {
